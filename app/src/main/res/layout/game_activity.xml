@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_game">
+
+    <!-- 🔼 Profile Image (Top-left corner, small size) -->
+    <ImageView
+        android:id="@+id/imgProfile"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/profile_icon2"
+        android:contentDescription="@string/desc_profile_icon"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp" />
+
+    <!-- 🟠 User ID Text beside profile -->
+    <TextView
+        android:id="@+id/tvUserId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="@string/guest_user"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/imgProfile"
+        app:layout_constraintStart_toEndOf="@id/imgProfile"
+        app:layout_constraintTop_toTopOf="@id/imgProfile" />
+
+    <!-- 🔘 2 Player Button -->
+    <Button
+        android:id="@+id/btnTwoPlayer"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/two_player"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@id/imgProfile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:backgroundTint="#2196F3"
+        android:layout_marginTop="270dp"/>
+
+    <!-- 🔘 1 Player Button -->
+    <Button
+        android:id="@+id/btnOnePlayer"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/one_player"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@id/btnTwoPlayer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:backgroundTint="#2196F3"
+        android:layout_marginTop="20dp"/>
+
+    <!-- 🏠 Home Button -->
+    <ImageButton
+        android:id="@+id/btnHome"
+        android:layout_width="62dp"
+        android:layout_height="61dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/baseline_home_24"
+        android:contentDescription="@string/desc_home_button"
+        android:importantForAccessibility="yes"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

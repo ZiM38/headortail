@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_result"
+    android:padding="24dp">
+
+    <!-- Center Texts in the middle -->
+    <LinearLayout
+        android:id="@+id/textContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Team Win Message -->
+        <TextView
+            android:id="@+id/tvFinalMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Team A Wins!"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#FF5722"
+            android:layout_marginBottom="20dp" />
+
+        <!-- User Win/Lose Message -->
+        <TextView
+            android:id="@+id/tvMatchResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🎉 You have won the Match!"
+            android:textSize="28sp"
+            android:textColor="#FF5722"
+            android:layout_marginBottom="10dp" />
+    </LinearLayout>
+
+    <!-- Back to Home Button at Bottom Center -->
+    <Button
+        android:id="@+id/btnGoHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back to Home"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#2196F3"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp" />
+</RelativeLayout>

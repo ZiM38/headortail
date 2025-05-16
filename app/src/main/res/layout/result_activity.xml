@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_stadium">
+
+    <!-- 🏏 Score Info -->
+    <TextView
+        android:id="@+id/tvScoreBoard"
+        android:layout_width="123dp"
+        android:layout_height="108dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Runs: 0/0\nOver: 0.0\nTarget: 00"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <!-- 🎲 Dice B FIRST -->
+    <ImageView
+        android:id="@+id/diceB"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="134dp"
+        android:src="@drawable/dice1" />
+
+    <!-- 🏷 Team B Label AFTER Dice -->
+    <TextView
+        android:id="@+id/tvTeamB"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/diceB"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="-162dp"
+        android:layout_toStartOf="@id/diceB"
+        android:background="@drawable/team_label"
+        android:gravity="center"
+        android:text="TEAM B"
+        android:textColor="#FFFFFF" />
+
+    <!-- 🏷 Team A Label FIRST -->
+    <TextView
+        android:id="@+id/tvTeamA"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/team_label"
+        android:gravity="center"
+        android:text="TEAM A"
+        android:textColor="#FFFFFF" />
+
+    <!-- 🎲 Dice A AFTER Label -->
+    <ImageView
+        android:id="@+id/diceA"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@id/tvTeamA"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="-14dp"
+        android:layout_toEndOf="@id/tvTeamA"
+        android:src="@drawable/dice1" />
+
+    <!-- 🎲 Large Dice Result Number -->
+    <TextView
+        android:id="@+id/tvDiceResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        android:textColor="#00BFFF"
+        android:textSize="100sp"
+        android:textStyle="bold"
+        android:layout_centerInParent="true" />
+
+    <!-- ❌ OUT! TextView -->
+    <TextView
+        android:id="@+id/tvOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OUT!"
+        android:textColor="#FF0000"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:layout_centerInParent="true"/>
+
+    <!-- 🔘 Seven Ball Buttons Row (Including Dot Ball) -->
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp">
+
+        <LinearLayout
+            android:id="@+id/ballRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn1"
+                style="@style/BallButton"
+                android:layout_width="53dp"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btn2"
+                style="@style/BallButton"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:text="2" />
+
+            <Button
+                android:id="@+id/btn3"
+                style="@style/BallButton"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:text="3" />
+
+            <Button
+                android:id="@+id/btn4"
+                style="@style/BallButton"
+                android:layout_width="57dp"
+                android:layout_height="wrap_content"
+                android:text="4" />
+
+            <Button
+                android:id="@+id/btn5"
+                style="@style/BallButton"
+                android:layout_width="59dp"
+                android:layout_height="wrap_content"
+                android:text="5" />
+
+            <Button
+                android:id="@+id/btn6"
+                style="@style/BallButton"
+                android:layout_width="57dp"
+                android:layout_height="wrap_content"
+                android:text="6" />
+
+            <Button
+                android:id="@+id/btnDot"
+                style="@style/BallButton"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#2196F3"
+                android:text="•"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</RelativeLayout>

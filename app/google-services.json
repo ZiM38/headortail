@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "140374232368",
+    "project_id": "headortail-886a9",
+    "storage_bucket": "headortail-886a9.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:140374232368:android:e885bbcceab9de400f4cf5",
+        "android_client_info": {
+          "package_name": "com.example.headortail"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzWmpB74xlwJZMh4jFV9GqQo9HrjQ10o4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

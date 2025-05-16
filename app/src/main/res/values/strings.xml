@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Head or Tail</string>
+    <string name="default_web_client_id">your_firebase_web_client_id_here</string>
+    <string name="desc_profile_icon">User profile icon</string>
+    <string name="desc_home_button">Home button</string>
+    <string name="guest_user">guest12345</string>
+    <string name="one_player">1 Player</string>
+    <string name="two_player">2 Player</string>
+</resources>
